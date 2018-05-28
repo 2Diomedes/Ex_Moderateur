@@ -7,10 +7,23 @@ btn.addEventListener('click', beautify);
 //   console.log("smiley["+ i + "] = " + smiley[i]);
 // }
 
-var smiley = ":)";
+// function beautify(){
+//   modTxt = document.getElementById('mod-txt').value;
+//   for (var i = 0; i < smiley.length; i++) {
+//     console.log("smiley["+ i + "] = " + smiley[i]);
+//     var n = modTxt.replace(smiley[i], "-");
+//     console.log(n);
+//   }
+//
+// }
 
-function beautify(){
+var smiley1 = ":')";
+var smiley2 = ":)";
+var smiley3 = ":D";
+
+function beautify() {
   modTxt = document.getElementById('mod-txt').value;
-  var n = modTxt.search(smiley);
+  var n = modTxt.replace(/smiley1|smiley2|smiley3/, "--");
   console.log(n);
+
 }
